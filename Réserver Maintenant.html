@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Page HTML Résarvation 'Langage en Français'-->
+<head> <!--Head-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Résarvation" />
+	<meta name="keywords" content="Logan Travel, Guide de voyage en ligne, Guide de voyage, Réserver Maintenant" />
+	<meta name="author" content="Logan Ouaras" />
+	
+	<!--Titre page 'Réserver Maintenant'-->
+    <title> 
+		Réserver Maintenant
+	</title>
+	<link rel="stylesheet" href="StyleRéserverMaintenant.css"> <!--Fichier CSS externe 'StyleRéserverMaintenant'-->
+	<script type="text/javascript" src="ScriptTravel.js"></script> <!--Fichier JS externe 'ScriptTravel'-->
+</head>
+
+<body> <!--Body-->
+
+	<!--Header-->
+	<header>
+        <div class="logo">
+			<img src="images/logo-logan-travel.jpg" width="80" height="60" >
+            <a href="Guide de voyage en ligne.html"><span>Guide De Voyage</span> En ligne</a>
+        </div>
+        <ul class="menu">
+            <li><a href="Guide de voyage en ligne.html">Acceuil</a></li>
+            <li><a href="Guide de voyage en ligne.html">À Propos</a></li>
+            <li><a href="Guide de voyage en ligne.html">Destinations</a></li>
+            <li><a href="Guide de voyage en ligne.html" id="cnt">Contact</a></li>
+        </ul>
+		
+		<div class="responsive-menu"></div>
+	</header>
+	<!---------------------------------------------------------------------------------------------------->
+	<!--div pricipale-->
+	<div class="div-princ">
+		<!------------------------------------------------------------------------------------------------>
+		<!--Section Principale-->
+		<section class="section-princ">
+		<!--  Contact section -->
+		<section id="contact">
+			<h1 class="title">Formulaire de Résarvation</h1>
+			<form method="post" enctype="multipart/form-data">
+				<div class="left-right">
+					<div class="left">
+						<label>Nom Complet</label>
+						<input type="text" name="nom" size="40" maxlength="256" value="Votre nom complet">
+						<label>Sexe</label>
+							<select name="sexe" size="l" tabindex="2">
+								<option value="null" > Votre sexe</option>
+								<option value="Homme"> Homme</option>
+								<option value="Femme"> Femme</option>
+							</select>
+						<label>Age</label>
+						<input type="text" size="40" maxlength="256" value="Votre age">
+						<label>Destinations</label>
+						<input type="text" size="40" maxlength="256" value="Votre destination">
+						<label>Email</label>
+						<input type="mail" name="mail" size="40" maxlength="256" value="Votre mail">
+						<label>Arrivée</label>
+						<input type="date" name="date" max="2022-07-06">
+						<label>Départ</label>
+						<input type="date" name="date" max="2023-01-01">
+					</div>
+					<div class="right">
+						<label>Numéro</label>
+						<input type="text size="40" maxlength="256" value="Votre numéro de téléphone">
+						<label>Pays</label>
+								<select name="pays" size="l" tabindex="2">
+									<option value="null" > Votre pays</option>
+									<optgroup label="Afrique">
+										<option value="Algérie"> Algérie</option>
+										<option value="Tunisie"> Tunisie</option>
+										<option value="Maroc"> Maroc</option>
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="France"> France</option>
+										<option value="Italie"> Italie</option>
+										<option value="Allemagne"> Allemagne</option>
+									</optgroup>
+									<optgroup label="Autres">
+										<option value="Europe" > Europe </option>
+										<option value="Asie" > Asie </option>
+										<option value="Amériques" > Amériques </option>
+										<option value="Océanie" > Océanie</option>
+									</optgroup>
+								</select>
+						<label>Nom d'Hotel</label>
+						<input type="text" size="40" maxlength="256" value="Hotel">
+						<label>Passport</label>
+								<input type="file" name="fileUpload" id="fileUpload" accept="image/jpeg"><br>
+								<input id="max_id" type="hidden" name="MAX_FILE_SIZE" value="10000"/>
+						<label>Adresse</label>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647531560805!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+					<button>Envoyer</button>
+				</form>
+			</section>
+		</section>
+	</div>
+	
+	<!---------------------------------------------------------------------->
+	<!-- Footer -->
+    <footer>
+        <p> Réalisé par <span>OUARAS KHELIL RAFIK</span> | Tous les droits sont réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Page HTML Principale 'Langage en Français'-->
+<head> <!--Head-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ma première page web" />
+	<meta name="keywords" content="Logan Travel, Guide de voyage en ligne, Guide de voyage" />
+	<meta name="author" content="Logan Ouaras" />
+	
+	<!--Titre page 'Logan Travel'-->
+    <title> 
+		Logan Travel
+	</title>
+	<link rel="stylesheet" href="StyleTravel.css"> <!--Fichier CSS externe 'StyleTravel'-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/> <!--Incon externe pour info Nom & Prénom 'person_filled'-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Incon externe pour info Email 'mail'-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--Incon externe pour info section & groupe 'local_library'-->
+	<script type="text/javascript" src="ScriptTravel.js"></script> <!--Fichier JS externe 'ScriptTravel'-->
+</head>
+
+<body> <!--Body-->
+	<!--Header-->
+	<header>
+        <div class="logo">
+			<img id="btnplay" src="images/logo-logan-travel.jpg" width="80" height="60" >
+            <a href="#home"><span>Guide De Voyage</span> En ligne</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#a-propos">À Propos</a></li>
+            <li><a href="#popular-destination">Destinations</a></li>
+            <li><a href="#contact" id="cnt">Contact</a></li>
+        </ul>
+		
+		<div class="responsive-menu"></div>
+	</header>
+	<!---------------------------------------------------------------------------------------------------->
+	<!--div pricipale-->
+	<div class="div-princ">
+	
+		<!--nav de les informations de l'étudiant-->
+		<nav class="info-pers">
+			<div id="info">
+				<h2>INFORMATION</h2>
+			</div>
+			<div class="info-etud"><span class="material-symbols-outlined">person_filled</span><b> OUARAS Khelil Rafik</b></div>
+			<div class="info-etud"><span class="material-symbols-outlined">mail</span><b> K.ouaras@univ-boumerdes.dz</b></div>
+		</nav>
+		<!------------------------------------------------------------------------------------------------>
+		<!--Section Principale-->
+		<section class="section-princ">
+		<!------------------------------------------------------------------------------------------------>
+			<!--Section Home-->
+			<section id="home">
+				<h2>nous suivre</h2>
+				<h4>Logan Travel</h4>
+				<br>
+				<p>Organized travel to Turkey, Tunisia, USA</p>
+				<p>and Spain ...</p>
+				<br>
+				<a href="Réserver Maintenant.html" class="btn-reservation">Réserver Maintenant</a>
+
+				<div class="trouver-Pays-Place-Hotel">
+					<form>
+						<div>
+							<label>Pays</label>
+							<input type="text" placeholder="Entrez un Pays">
+						</div>
+						<div>
+							<label>Place</label>
+							<input type="text" placeholder="Entrez une Place">
+						</div>
+						<div>
+							<label>Hotel</label>
+							<input type="text" placeholder="Entrez un Hotel">
+						</div>
+						<input type="submit" value="voir">
+					</form>
+				</div>
+			</section>
+
+		<!------------------------------------------------------------------------------------------------>
+			<!-- A propos section -->
+			<section id="a-propos">
+			
+				<h1 class="title">À Propos</h1>
+				
+				<div class="img-desc">
+				
+				   <div class="left">
+						<video loop  muted autoplay="autoplay">
+							<source src="Videos/video1.mp4" type="video/mp4">
+						</video>
+				   </div>
+				   
+					<div class="right">
+						<h3>QUI SOMMES-NOUS ?</h3>
+						<p>Logan Travel est une agence de voyage basée à Alger en Algérie. Logan propose des réservations d'hôtels dans le monde entier, des visites guidées, des transferts aéroport Hôtels, des voyages d'affaires, une assistance pour les demandes de visa en USA, en Espagne, en France, en Turquie ...</p>
+						<a href="#">Lire Plus</a>
+					</div>
+					
+				</div>
+			</section>
+		<!--------------------------------------------------------------------------------------------------->
+			<!-- Section Destination -->
+			<section id="popular-destination">
+				<h1 class="title">Destinations Populaires</h1>
+				<div class="content">
+					<!-- box -->
+					<div class="box">
+						<img src="images/USA.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>Etats-Unis[USA]</h4>
+								<p>Avec une cinquantaine d’états fédérés,</p>
+								<p>les États-Unis vous accueillent avec autant de richesses touristiques à découvrir....</p>
+								<a href="Déstination USA.html">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+					<!-- box -->
+					<div class="box">
+						<img src="images/France.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>France</h4>
+								<p>En pleine Europe occidentale,</p>
+								<p>la France est un pays reconnu pour ses paysages multiples et variés....</p>
+								<a href="Déstination France.html">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+					<!-- box -->
+					<div class="box">
+						<img src="images/Egypte.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>Egypte</h4>
+								<p>Partez à la découverte de l’Égypte et vivez tel un aventurier au cœur du berceau de la civilisation égyptienne.</p>
+								<p>À travers vos différentes visites culturelles, plongez dans l’univers des pharaons.</p>
+								<a href="Déstination Egypte.html">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+					 <!-- box -->
+					 <div class="box">
+						<img src="images/Tunisie.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>Tunisie</h4>
+								<p>La Tunisie possède tous les ingrédients qui vous garantirons un voyage dont vous garderez un souvenir impérissable.</p>
+								<p>Vous pourrez découvrir cet univers captivant en choisissant une des offres de voyage haut de gamme que nous vous proposons, avec des réductions exceptionnelles ....</p>
+								<a href="Déstination Tunisie.htmL">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+					 <!-- box -->
+					 <div class="box">
+						<img src="images/Turquie.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>Turquie</h4>
+								<p>Située à mi-chemin entre l'Europe et l'Asie, la Turquie fascine pour sa richesse culturelle et son patrimoine environnemental très bien conservé.</p>
+								<p>Même si vous ne passez que quelque temps dans ce pays, vous en garderez un excellent souvenir. Tour d'horizon des choses à faire en Turquie, vers la fin du séjour ....</p>
+								<a href="Déstination Turquie.html">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+					 <!-- box -->
+					 <div class="box">
+						<img src="images/Espagne.jpg" alt="">
+						<div class="content">
+							<div>
+								<h4>Espagne</h4>
+								<p>Des Pyrénées à la Méditerranée, et de là à l'Atlantique, l'Espagne est plus diverse que les stéréotypes ne le laissent croire.</p>
+								<p>La paella et la tauromachie sont peut-être espagnoles, mais aucune des deux ne définit ce pays ibérique. Vous découvrirez un large éventail de cultures en Espagne - plus que vous ne l'imaginez ....</p>
+								<a href="Déstination Espagne.html">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+					<!-- box -->
+				</div>
+			</section>
+
+		<!--------------------------------------------------------------------------------------------------->
+		<!--  Contact section -->
+		<section id="contact">
+			<h1 class="title">Contact</h1>
+			<form method="post" enctype="multipart/form-data">
+				<div class="left-right">
+					<div class="left">
+						<label>Nom Complet</label>
+						<input type="text">
+						<label>Objet</label>
+						<input type="text">
+						<label>Email</label>
+						<input type="mail">
+						<label>Message</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<div class="right">
+						<label>Numéro</label>
+						<input type="text">
+						<label>Date</label>
+						<input type="date">
+						<label>Pays</label>
+								<select name="pays" size="l" tabindex="2">
+									<option value="null" > Votre pays</option>
+									<optgroup label="Afrique">
+										<option value="Algérie"> Algérie</option>
+										<option value="Tunisie"> Tunisie</option>
+										<option value="Maroc"> Maroc</option>
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="France"> France</option>
+										<option value="Italie"> Italie</option>
+										<option value="Allemagne"> Allemagne</option>
+									</optgroup>
+									<optgroup label="Autres">
+										<option value="Europe" > Europe </option>
+										<option value="Asie" > Asie </option>
+										<option value="Amériques" > Amériques </option>
+										<option value="Océanie" > Océanie</option>
+									</optgroup>
+								</select>
+						<label>Adresse</label>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615509614!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647531560805!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+					<button>Envoyer</button>
+				</form>
+			</section>
+		</section>
+	</div>
+	
+	<!---------------------------------------------------------------------->
+	<!-- Footer -->
+    <footer>
+        <p> Réalisé par <span>OUARAS KHELIL RAFIK</span> | Tous les droits sont réservés.</p>
+    </footer>
+</body>
+</html>

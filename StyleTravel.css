@@ -1,0 +1,589 @@
+/*Fichier CSS Externe*/
+
+/*-- "*" Sélecteur universel: Permet d’appliquer un style à tous les éléments*/
+*{
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: LoganTravelFonts; /*Mon font*/
+}
+
+@font-face{ /*@font-face : permet de spécifier des polices en ligne. @font-face élimine la nécessité de dépendre du nombre limité de polices que l'utilisateur a installé sur son ordinateur*/
+	font-family: LoganTravelFonts;
+	src: url('Fonts/LoganTravelFonts.ttf');
+}
+
+
+
+/*pour supprimer silignure "dans (a)"*/
+
+a{
+    text-decoration: 0;
+}
+
+/*Body*/
+
+body {
+	display: flex;
+	background-color: black;
+	flex-direction:column;
+	color: white;
+}
+
+/*Création Ascenseur*/
+
+/* width (Ascenseur)*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (Ascenseur)*/
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle (Ascenseur)*/
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover (Ascenseur)*/
+::-webkit-scrollbar-thumb:hover {
+  background: #29d9d5;
+}
+
+/*font size la page html*/
+
+html{
+    font-size: 80%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*Selector Header*/
+
+header{
+	background: linear-gradient(rgba(0,0,0,0.1),#333), url("images/background-img.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 5%;
+}
+
+/*Selector Logo*/
+
+header .logo a{
+	position:absolute;
+    font-size: 25px;
+    color: #29d9d5;
+	top: 0.5em;
+	left: 6.5em;
+}
+
+header .logo img{
+	opacity: .9; /*Modification "image" screen*/
+    mix-blend-mode: screen;
+	box-shadow: 0 0 10px #29d9d5;
+    background-position: center;
+    background-size: cover;
+	position:absolute;
+	top: 0.4em;
+	left: 5em;
+}
+
+header .logo a span{
+    color: #fff;
+}
+
+
+
+/*Menu*/
+
+.menu{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a{
+    color: #fff;
+    font-size: 20px;
+}
+#cnt{ /*Color (pour Contact)*/
+	color: #29d9d5;
+}
+.menu:hover{
+    letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------*/
+/*Selector titre pricipale*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Selector div principale*/
+
+.div-princ{
+	display: flex;
+}
+
+.title-princ{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+/*Selector nav info*/
+
+.info-pers{
+	background: #222;
+	position :fixed;
+	flex-flow: column nowrap;
+	width: 260px;
+	height: calc(100% - 0px);
+}
+
+/*Selector pour modifier le style de text info-etud*/
+
+.info-etud b{
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top: 80px;
+}
+
+#info h2{
+	font-weight: bold;
+	text-shadow: 4px 4px #29d9d5;
+	text-decoration: underline; /*Souligner text*/
+	color: white;
+	padding-left: 30px;
+	padding-top: 130px;
+}
+
+/*Selector pour modifier le Style des incons "info-etud"*/
+
+.material-symbols-outlined{
+	color:  #29d9d5 ;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 80px;
+}
+
+/*-------------------------------------------------*/
+/*Selector section principale*/
+
+.section-princ{
+	width: 100%;
+    height: calc(100% - 100px);
+	padding-left: 260px;
+	margin-bottom: 100px;
+	display: fixed;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Selector "Home"*/
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("images/img1.jpg"); /*Pour un background image et modification du lumiére*/
+    background-position: center;
+    background-size: cover;
+	height: 100vh; /*Personnalisation du taille image*/
+    display: flex;
+    align-items: center; /*pour centrer l'image*/
+    justify-content: center;
+	flex-direction: column;
+    position: relative;
+}
+
+/*Selector Home ==> h2 (le titre: Nous suivre) et faire des modification du style*/
+
+#home h2{
+    font-size: 45px; /*la taille du font*/
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+}
+
+/*Selector Home ==> h4 (le titre: Voyagez en Sécurité) et faire des modification du style*/
+
+#home h4{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#home p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Selector pour le "bottom reservation"*/
+
+.btn-reservation {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+/*Selector pour le "bottom reservation" quand touchés le button (modification style)*/
+
+.btn-reservation:hover {
+    background-color: #29d9d5;
+    color: #fff;
+}
+
+/*Selector pour trouver votre choix (PAYS + PLACES + HOTELS)*/
+
+.trouver-Pays-Place-Hotel { /*Ajouter "une background color" et faire des modification sur sa position*/
+    background-color: #222;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -50px;
+}
+
+/*faire modification sur form "trouver-Pays-Place-Hotel" sur sa posistion "box du text"*/
+
+.trouver-Pays-Place-Hotel form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+/*faire modification sur form "trouver-Pays-Place-Hotel" sur sa posistion des elements & l'attribut "voir"*/
+
+.trouver-Pays-Place-Hotel form div , .trouver-Pays-Place-Hotel form input[type="submit"]{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+/*faire modification sur form "trouver-Pays-Place-Hotel" sur le style des elements*/
+
+.trouver-Pays-Place-Hotel form label {
+    color: #999;
+    font-size: 15px;
+	font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/*faire modification sur form "trouver-Pays-Place-Hotel" sur "box du text" (bordure et background et Style-font)*/
+
+.trouver-Pays-Place-Hotel form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #29d9d5;
+    outline: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+
+/*faire modification sur form "trouver-Pays-Place-Hotel" sur l'attribut "voir" (font: color, positon, size)*/
+
+.trouver-Pays-Place-Hotel form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*Selector pour le "bottom voir" quand touchés le button (modification style)*/
+
+.trouver-Pays-Place-Hotel form input[type="submit"]:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+/*-------------------------------------------------------------*/
+/*Selector "a-propos"*/
+
+#a-propos{ /*Modification "a-propos" sa posistion*/
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
+}
+
+/*Selector pour modifier "titre" sa position & font: "Color, type"*/
+
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #29d9d5;
+    position: relative;
+    margin-left:15px;
+    font-size: 20px;
+}
+
+/*Selector de modification "titre" (Ajouter un "|" avant "titre" "background white")*/
+
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+
+/*Faire modification pour la position "Video | Titre avec sont text":*/
+
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-desc .left {
+    position: relative;
+    margin-left: 10px;
+    height: 250px;
+    width: 40%;
+}
+.img-desc .right {
+    width: 57%;
+	text-align: justify;
+}
+
+.img-desc .left video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 30px #29d9d5;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Pour Ajouter un background color aprés la video et faire des modification sur les positions du section "a propos"*/
+
+.img-desc .left::after{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    background-color: #29d9d5;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-desc .right h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.img-desc .right p{
+    color: #999;
+    font: 14px;
+    margin-bottom: 36px;
+}
+.img-desc .right a{
+    border: 1px solid #29d9d5;
+    color: #29d9d5;
+    font-size: 14px;
+    padding: 8px 25px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------------*/
+/*Selector "Destination"*/
+
+#popular-destination{ /*Modification "Destination" sa posistion*/
+    padding: 0 10% ;
+    margin-bottom: 50px;
+}
+
+/*Modification "Destination ==> Content" sa posistion*/
+
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+}
+
+/*Modification "Destination ==> Content ==> box" sa posistion "relative" et sa volume*/
+
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+
+/*Modification "Destination ==> Content ==> box ==> image" le volume de l'image*/
+
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Modification "les Boxes" sa posistion de content + Ajouter une background "white"*/
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.box .content  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+	color: black;
+	font-weight: bolder;
+}
+
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+	color: black;
+}
+
+.box .content p:nth-child(3){
+    margin-bottom: 25px;
+}
+
+.box .content a {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+
+/*Pour faire animation dans le box*/
+.box:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+.box:hover .content {
+    transform: translateX(0);
+}
+
+/*--------------------------------------------------------------------*/
+/*Selectors "Contact"*/
+
+#contact{ /*Modification "Contact" sa posistion*/
+    padding: 0 10%;
+    margin-bottom: 120px;
+    height: 90vh;
+}
+
+#contact form {	/*Modification "Contact ==> form" sa posistion + Ajouter une background "White"*/
+    background-color: #fff;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Ajouter des séparation dans "form" "left   |     right"*/
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-right .left , .left-right .right  {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+#contact form label {
+    font-size: 14px;
+	color: black;
+	font-weight: bolder;
+    padding: 10px 0;
+    font-weight: 600
+}
+
+/*Modification de volume de box "input + select"*/
+#contact form input, #contact form select {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact form input:focus , textarea:focus {
+    border: 1px solid #29d9d5;
+}
+
+/*Modification de volume "maps"*/
+iframe {
+    height: 150px;
+    width: 100%;
+}
+
+#contact button {
+    width: fit-content;
+	border-color: none;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#contact button:hover {
+    letter-spacing: 1px;
+}
+
+/*Selector footer*/
+
+footer{
+    width: 100%;
+    background-color: #29d9d5;
+    padding: 10px 0;
+	position: sticky; /*Pour faire Bring forward*/
+    font-size: 14px;
+    text-align: center; /*Pour centrer le text*/
+}
+footer p{
+    color: black;
+	font-weight: bold;
+}
+footer p span{
+    color: white;
+	font-weight: bold;
+}

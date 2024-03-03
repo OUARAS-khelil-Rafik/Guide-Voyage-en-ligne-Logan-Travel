@@ -1,0 +1,255 @@
+/*Fichier CSS Externe*/
+
+/*-- "*" Sélecteur universel: Permet d’appliquer un style à tous les éléments*/
+*{
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: LoganTravelFonts; /*Mon font*/
+}
+
+@font-face{ /*@font-face : permet de spécifier des polices en ligne. @font-face élimine la nécessité de dépendre du nombre limité de polices que l'utilisateur a installé sur son ordinateur*/
+	font-family: LoganTravelFonts;
+	src: url('Fonts/LoganTravelFonts.ttf');
+}
+
+/*pour supprimer silignure "dans (a)"*/
+
+a{
+    text-decoration: 0;
+}
+
+/*Body*/
+
+body {
+	display: flex;
+	background: linear-gradient(rgba(0,0,0,0.2),#333), url("images/background-img2.jpg");
+	background-position: center;
+    background-size: cover;
+	flex-direction:column;
+	color: white;
+}
+
+/*Création Ascenseur*/
+
+/* width (Ascenseur)*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (Ascenseur)*/
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle (Ascenseur)*/
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+/* Handle on hover (Ascenseur)*/
+::-webkit-scrollbar-thumb:hover {
+  background: #29d9d5;
+}
+
+/*font size la page html*/
+
+html{
+    font-size: 80%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*Selector Header*/
+
+header{
+	background: linear-gradient(rgba(0,0,0,0.1),#333), url("images/background-img.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 5%;
+}
+
+/*Selector Logo*/
+
+header .logo a{
+	position:absolute;
+    font-size: 25px;
+    color: #29d9d5;
+	top: 0.5em;
+	left: 6.5em;
+}
+
+header .logo img{
+	opacity: .9; /*Modification "image" screen*/
+    mix-blend-mode: screen;
+	box-shadow: 0 0 10px #29d9d5;
+    background-position: center;
+    background-size: cover;
+	position:absolute;
+	top: 0.4em;
+	left: 5em;
+}
+
+header .logo a span{
+    color: #fff;
+}
+
+/*Menu*/
+
+.menu{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a{
+    color: #fff;
+    font-size: 20px;
+}
+#cnt{ /*Color (pour Contact)*/
+	color: #29d9d5;
+}
+.menu:hover{
+    letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------*/
+/*Selector titre pricipale*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Selector div principale*/
+
+.div-princ{
+	display: flex;
+}
+
+.title-princ{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+/*-------------------------------------------------*/
+/*Selector section principale*/
+
+.section-princ{
+	width: 100%;
+    height: calc(100% - 100px);
+	padding-left: 200px;
+	margin-bottom: 220px;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*Selectors "Contact"*/
+
+#contact{ /*Modification "Contact" sa posistion*/
+	padding-top: 100px;
+    padding-right: 200px;
+	align-items: center;
+    margin-bottom: 80px;
+    height: 90vh;
+}
+
+#contact form {	/*Modification "Contact ==> form" sa posistion + Ajouter une background "White"*/
+    background-color: #fff;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Ajouter des séparation dans "form" "left   |     right"*/
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 20px;
+}
+
+.left-right .left , .left-right .right  {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+#contact form label {
+    font-size: 14px;
+	color: black;
+	font-weight: bolder;
+    padding: 10px 0;
+    font-weight: 600
+}
+
+/*Modification de volume de box "input + select"*/
+#contact form input, #contact form select {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea {
+    height: 189px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact form input:focus , textarea:focus {
+    border: 1px solid #29d9d5;
+}
+
+/*Modification de volume "maps"*/
+iframe {
+    height: 189px;
+    width: 100%;
+}
+
+#contact button {
+	margin-top: 20px;
+    width: fit-content;
+	border-color: none;
+    padding: 8px 30px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#contact button:hover {
+    letter-spacing: 1px;
+}
+
+/*Selector footer*/
+
+footer{
+	display: fixed;
+    width: 100%;
+    background-color: #29d9d5;
+    padding: 10px 0;
+	position: sticky; /*Pour faire Bring forward*/
+    font-size: 14px;
+    text-align: center; /*Pour centrer le text*/
+}
+footer p{
+    color: black;
+	font-weight: bold;
+}
+footer p span{
+    color: white;
+	font-weight: bold;
+}
